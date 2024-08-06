@@ -1,7 +1,9 @@
 import { expect, test } from "vitest";
+
 import {
+  letterScores,
   calculateScrabbleScore,
-  calculateMultipleScore,
+  calculateMulitpleScore,
 } from "./scrabble-score";
 
 // Ticket 2
@@ -19,11 +21,11 @@ import {
 //   ["B", 3],
 //   ["C", 3],
 //   ["D", 2],
-// ])('calculateScrabbleScore(%s) -> %s', (letter, value) => {
-//   expect (calculateScrabbleScore(letter)).toBe(value)
-// })
+// ])("calculateScrabbleScore(%s) -> %s", (letter, value) => {
+//   expect(calculateScrabbleScore(letter)).toBe(value);
+// });
 
 // TIKET 3 calculate multiple score
-test("calculateMultipleScore(word)", () => {
-  expect(calculateMultipleScore(letters)).toBe(value);
+test("calculateMultipleScore(object, letter1, letter2)", () => {
+  expect(calculateMulitpleScore(letterScores, "A", "B")).toBe(4);
 });

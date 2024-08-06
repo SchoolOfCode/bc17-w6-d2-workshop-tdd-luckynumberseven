@@ -7,24 +7,22 @@ export function calculateScrabbleScore(word) {
     D: 2,
   };
   // Green stage in TDD cycle
-  /*
-  if (word === "A") {
-    return 1;
-  }
-  */
 
-  // Refactor stage in TDD cycle
-  /*
-  return word === "A" ? 1 : 0;
-  return word === "B" ? 3 : 0;
-  */
+  // if (word === "A") {
+  //   return 1;
+  // }
 
-  // Final solution
-  // Return the matching score for the provided word from our letterScores object
+  //   // Refactor stage in TDD cycle
+  //   /*
+  //   return word === "A" ? 1 : 0;
+  //   return word === "B" ? 3 : 0;
+  //   */
+  //   // Final solution
+  //   // Return the matching score for the provided word from our letterScores object
   return letterScores[word];
 }
 
-const letterScores = {
+export const letterScores = {
   A: 1,
   B: 3,
   C: 3,
@@ -32,10 +30,8 @@ const letterScores = {
 };
 
 export function calculateMulitpleScore(letterScores, letter1, letter2) {
-  // get the letter value
-
   // add the value
-  const result = letter1 + letter2;
+  const result = letterScores[letter1] + letterScores[letter2];
   // return result
   return result;
 }
