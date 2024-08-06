@@ -1,5 +1,4 @@
 export function calculateScrabbleScore(word) {
-
   // TICKET 2
   const letterScores = {
     A: 1,
@@ -23,4 +22,20 @@ export function calculateScrabbleScore(word) {
   // Final solution
   // Return the matching score for the provided word from our letterScores object
   return letterScores[word];
+}
+
+const letterScores = {
+  A: 1,
+  B: 3,
+  C: 3,
+  D: 2,
+};
+
+export function calculateMulitpleScore(letterScores, letter1, letter2) {
+  // get the letter value
+
+  // add the value
+  const result = letter1 + letter2;
+  // return result
+  return result;
 }
